@@ -1,0 +1,23 @@
+<div>
+  <h1>Home</h1>
+  <p>Pesquisar endereço:</p>
+  <input type="text" [(ngModel)]="cep" />
+  <button (click)="searchAddress()">Pesquisar</button>
+
+  <div>
+    <h2>Endereço</h2>
+    <p>{{ address?.cep }}</p>
+    <p>{{ address?.logradouro }}</p>
+    <p>{{ address?.complemento }}</p>
+    <p>{{ address?.unidade }}</p>
+    <p>{{ address?.bairro }}</p>
+    <p>{{ address?.localidade }}</p>
+    <p>{{ address?.uf }}</p>
+    <p>{{ address?.estado }}</p>
+    <p>{{ address?.regiao }}</p>
+    <p>{{ address?.ibge }}</p>
+    <p>{{ address?.gia }}</p>
+    <p>{{ address?.ddd }}</p>
+    <p>{{ address?.siafi }}</p>
+  </div>
+</div>
